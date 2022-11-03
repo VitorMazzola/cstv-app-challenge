@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/circle_shape_placeholder.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/progress_bar.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/rounded_play_one_background.xml" value="0.261" />
+        <entry key="app/src/main/res/drawable/rounded_play_two_background.xml" value="0.261" />
+        <entry key="app/src/main/res/drawable/rounded_shape_placeholder.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/rounded_status_gray.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/rounded_status_red.xml" value="0.214" />
+        <entry key="app/src/main/res/drawable/view_launcher.xml" value="0.2025" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/activity_match_list.xml" value="0.3591485507246377" />
+        <entry key="app/src/main/res/layout/fragment_match_detail.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_match_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_match_list.xml" value="0.3110000610351563" />
+        <entry key="app/src/main/res/layout/item_player_list.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/progress_loading.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

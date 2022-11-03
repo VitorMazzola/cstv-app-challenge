@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/matches_nav_graph"
+    app:startDestination="@id/matchListFragment">
+
+    <fragment
+        android:id="@+id/matchListFragment"
+        android:name="com.challenge.cstvapp.features.matches.MatchListFragment"
+        android:label="MatchListFragment"
+        tools:layout="@layout/fragment_match_list">
+
+        <action android:id="@+id/action_matchListFragment_to_matchDetailFragment"
+            app:destination="@id/matchDetailFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/matchDetailFragment"
+        android:name="com.challenge.cstvapp.features.matchdetail.MatchDetailFragment"
+        android:label="MatchListFragment"
+        tools:layout="@layout/fragment_match_list"/>
+
+</navigation>

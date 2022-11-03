@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
+    <!--Splash Page-->
+    <item android:drawable="@color/colorPrimary"/>
+
+    <item
+        android:left="40dp"
+        android:right="40dp">
+        <bitmap
+            android:src="@drawable/ic_fuze_splash"
+            android:gravity="clip_vertical"/>
+    </item>
+</layer-list>
