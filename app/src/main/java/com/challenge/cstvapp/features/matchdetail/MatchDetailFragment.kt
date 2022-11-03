@@ -12,7 +12,6 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.challenge.cstvapp.R
 import com.challenge.cstvapp.databinding.FragmentMatchDetailBinding
 import com.challenge.cstvapp.extensions.getMatchDomain
@@ -29,8 +28,6 @@ class MatchDetailFragment : Fragment() {
     private val viewModel by viewModels<DetailViewModel>()
 
     private lateinit var binding: FragmentMatchDetailBinding
-
-    private var matchDomain: MatchDomain? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -109,7 +106,6 @@ class MatchDetailFragment : Fragment() {
 
     companion object {
         const val ARG_MATCH_DOMAIN = "matchDomainArgs"
-
         fun arguments(match: MatchDomain) = Bundle().apply {
             putSerializable(ARG_MATCH_DOMAIN, match)
         }

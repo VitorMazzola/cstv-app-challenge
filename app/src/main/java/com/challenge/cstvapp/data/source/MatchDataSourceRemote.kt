@@ -1,7 +1,6 @@
 package com.challenge.cstvapp.data.source
 
 import com.challenge.cstvapp.extensions.getOrThrowDomainError
-import com.challenge.cstvapp.extensions.toDomainError
 import com.challenge.cstvapp.extensions.toLocalDateTime
 import com.challenge.cstvapp.model.domain.MatchDetailDomain
 import com.challenge.cstvapp.model.domain.MatchDomain
