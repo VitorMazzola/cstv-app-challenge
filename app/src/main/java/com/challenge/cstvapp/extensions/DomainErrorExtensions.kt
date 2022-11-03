@@ -2,7 +2,6 @@ package com.challenge.cstvapp.extensions
 
 import retrofit2.HttpException
 import java.net.HttpURLConnection
-import java.net.UnknownHostException
 
 internal fun <T> Result<T>.getOrThrowDomainError(): T = getOrElse { throwable ->
     throw throwable.toDomainError()

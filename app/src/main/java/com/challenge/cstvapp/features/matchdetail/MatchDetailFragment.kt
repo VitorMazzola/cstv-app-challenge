@@ -79,8 +79,8 @@ class MatchDetailFragment : Fragment() {
     private fun observers() {
         viewModel.action.observe(this) { action ->
             when(action) {
-                is MatchUiAction.MatchesNotFound -> binding.tvEmpty.visibility = View.VISIBLE
-                is MatchUiAction.Unexpected -> {}
+                is MatchUiAction.MatchesNotFound -> showError()
+                is MatchUiAction.Unexpected -> showError()
                 is MatchUiAction.Loading -> binding.progressBar.isVisible = action.isLoading
             }
         }
@@ -100,6 +100,11 @@ class MatchDetailFragment : Fragment() {
         } else {
             binding.tvEmpty.visibility = View.VISIBLE
         }
+    }
+
+    private fun showError() {
+        binding.tvEmpty.visibility = View.VISIBLE
+        binding.recyclerView.visibility = View.GONE
     }
 
     companion object {

@@ -45,8 +45,8 @@ class MatchListFragment : Fragment(), MatchListener {
     private fun observers() {
         viewModel.action.observe(this) { action ->
             when(action) {
-                is MatchUiAction.MatchesNotFound -> binding.tvEmpty.visibility = View.VISIBLE
-                is MatchUiAction.Unexpected -> binding.tvEmpty.visibility = View.VISIBLE
+                is MatchUiAction.MatchesNotFound -> showError()
+                is MatchUiAction.Unexpected -> showError()
                 is MatchUiAction.Loading -> binding.progressBar.isVisible = action.isLoading
             }
         }
@@ -60,6 +60,11 @@ class MatchListFragment : Fragment(), MatchListener {
         val adapter = MatchAdapter(requireContext(), matches, this)
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(context)
+    }
+
+    private fun showError() {
+        binding.tvEmpty.visibility = View.VISIBLE
+        binding.recyclerView.visibility = View.GONE
     }
 
     override fun onMatchClick(match: MatchDomain) {
