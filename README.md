@@ -16,11 +16,6 @@ O desafio compreenderá a construção de um App que mostra uma lista de partida
 * Injeção de depêndencia(DI) com [Hilt](https://developer.android.com/training/dependency-injection/hilt-android).
 
 
-## Screenshots
-
-<img src="/Users/wafx.vitor/Desenvolvimento/CSTVApp/scheenshots/screenshots.png" alt="Screenshot">
-
-
 ## Abrir projeto no Android Studio
 
 Clonar o repositório:
