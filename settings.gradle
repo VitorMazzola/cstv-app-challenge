@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "CSTV App"
 include ':app'
-include ':data'
