@@ -8,7 +8,7 @@ import retrofit2.http.Query
 import java.time.LocalDateTime
 
 interface ApiServices {
-    @GET("matches")
+    @GET("csgo/matches")
     suspend fun getMatchesList(
         @Query("begin_at") currentDate: LocalDateTime,
         @Query("size") size: Int
